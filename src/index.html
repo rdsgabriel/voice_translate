@@ -4,13 +4,69 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>recog</title>
+  <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-slate-100">
   
-  <h1 style="background-color: red;">FALA QUE EU TE ESCUTO</h1>
-  <button id="start-button">Start</button>
-  <button id="stop-button">Stop</button>
+  <div class="w-full h-full">
+
+  <section class="bg-gradient-to-br from-gray-100 to-slate-200 pb-48">
+    <div class="items-center w-full px-5 py-10 mx-auto md:px-12 lg:px-16 max-w-7xl">
+      <div class="max-w-xl p-10 mx-auto text-center">
+        <div><p class="mt-8 text-5xl font-medium tracking-tighter text-black">
+          I'm a simple voice translator
+
+  </p>
+  <p class="max-w-xl mx-auto mt-4 text-lg tracking-tight text-gray-600">
+    I recognize your voice and translate from Portuguese to English writing for you below.
+  </p>
+  </div>
+        <div class="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row">
+          <button id="start-button" class="items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">
+            Start
+          </button>
+          <a target="_blank" href="https://www.github.com/rdsgabriel" class="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600">
+            Github
+            <span aria-hidden="true"> → </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="relative items-center w-full px-5 pb-4 mx-auto mb-12 md:px-12 lg:px-16 max-w-7xl">
+      
+  <label for="message" class="text-sm font-medium text-gray-900 dark:text-white">What i heard</label>
+  <textarea readonly id="message" rows="4" class="p-2.5 w-full text-sm text-gray-600 bg-slate-200 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Press start and say to see something here"></textarea>
+
+    </div>
+  </section>
+
+              
+              
+  <footer class="w-full py-4 bg-slate-100" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-16">
+      <div class="flex flex-col items-baseline space-y-6">
+        <div class="mx-auto ">
+          <a  target="_blank" href="https://s3.sa-east-1.amazonaws.com/rdsgabriel.dev/triangle/index.html" class="mx-auto text-center transition duration-500 ease-in-out transform tracking-relaxed text-sm text-gray-500">
+          just a brazilian guy      </a>
+        </div>
+        <div class="mx-auto">
+          <span class="mx-auto mt-2 text-sm text-gray-500">
+            Copyright ©
+            <a  target="_blank" href="https://s3.sa-east-1.amazonaws.com/rdsgabriel.dev/triangle/index.html" class="mx-2 text-blue-500 hover:text-gray-500" rel="noopener noreferrer">@rdsgabriel.dev</a>since 2023
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </div>
+
+
+
+
   <script src="/src/recognition.js"></script>
 </body>
 </html>
